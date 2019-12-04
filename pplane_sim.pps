@@ -1,0 +1,12 @@
+%% PPLANE file %%
+
+H.name = 'pplane_sim.pps';
+H.xvar = 'x';
+H.yvar = 'y';
+H.xder = 'y';
+H.yder = '3.4154*(y-(0.01/x)*u)^2-((1.184*(0.01)^2)*u^2)/(10.4*x^3) - 9.81';
+H.pname = {'u','','yr','','',''};
+H.pval = {'sign((yr-y)*3-0.05*x)','','0.6','','',''};
+H.fieldtype = 'arrows';
+H.npts = 20;
+H.wind = [-10  10 -10  10];
